@@ -20,5 +20,6 @@ RUN chmod +x /app/docker_start.sh
 
 COPY hog_server /app/hog_server
 
+ENV PYTHONUNBUFFERED=1
 
 ENTRYPOINT ["/app/docker_start.sh"]
